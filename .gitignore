@@ -6,7 +6,7 @@ __pycache__/
 *.so
 *.egg-info/
 .eggs/
-.venv/
+backend/.venv/
 .env
 .env.*
 .pytest_cache/
