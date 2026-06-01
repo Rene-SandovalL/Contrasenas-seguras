@@ -69,7 +69,7 @@ export default function App() {
       const data = await response.json();
       setGenerated(Array.isArray(data.passwords) ? data.passwords : []);
     } catch (err) {
-      setError("No se pudo generar las contrasenas.");
+      setError("No se pudieron generar las contraseñas.");
       setGenerated([]);
     } finally {
       setLoading(false);
@@ -82,7 +82,7 @@ export default function App() {
         <div className="mx-auto flex w-full max-w-5xl flex-col gap-10 font-['Space_Grotesk']">
           <header className="space-y-4">
             <h1 className="text-4xl font-semibold text-white sm:text-5xl">
-              Generador y evaluador de contrasenas seguras
+              Generador y evaluador de contraseñas seguras
             </h1>
           </header>
 
@@ -122,12 +122,12 @@ export default function App() {
                 Evaluador en vivo
               </h2>
               <p className="mt-2 text-sm text-slate-300">
-                Escribe una contrasena y revisa los requisitos.
+                Escribe una contraseña y revisa los requisitos.
               </p>
               <input
                 value={candidate}
                 onChange={(event) => setCandidate(event.target.value)}
-                placeholder="Tu contrasena"
+                placeholder="Tu contraseña"
                 className="mt-6 w-full rounded-lg border border-slate-700/70 bg-slate-900/60 px-4 py-3 text-sm text-white outline-none transition focus:border-slate-500"
               />
 
